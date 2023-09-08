@@ -7,7 +7,7 @@ const updateSaldo = (saldo) => {
 }
 
     const tambahSaldo = () => {
-     let input = prompt("Masukkan Jumlah Saldo yang Ingin Dikurangi :")
+     let input = prompt("Masukkan Jumlah Saldo yang Ingin Ditambah :")
       if (!isNaN(input)) {
         saldo += parseInt(input)
         updateSaldo(saldo);
