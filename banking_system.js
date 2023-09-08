@@ -23,12 +23,12 @@ class BankAccount {
 }
 
 
-const account = new BankAccount();
+const user = new BankAccount();
 
 function formDeposit() {
   let input =parseFloat(prompt("Masukkan Jumlah Saldo :"));
   if (!isNaN(input)) {
-    account.deposit(input);
+    user.deposit(input);
     updateSaldo(saldo);
   } else {
     console.log("Input tidak valid. Mohon masukkan angka.");
@@ -38,12 +38,12 @@ function formDeposit() {
 function formWithdrawal() {
   let input =parseFloat(prompt("Masukkan Jumlah Saldo :"));
   if (!isNaN(input)) {
-    account.withdraw(input);
+    user.withdraw(input);
     updateSaldo(saldo);
   } else {
-    console.log("Silahkan Input Saldo yang Benar");
+    console.log("Input tidak valid. Mohon masukkan angka.");
   }
 }
 
-formDeposit();
-formWithdrawal();
+// formDeposit();
+// formWithdrawal();
